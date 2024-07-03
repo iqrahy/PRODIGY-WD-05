@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="search-box">
+                <input class="input-box" type="text" placeholder="Enter Your Location">
+                <button id="searchBtn">
+                    <iconify-icon icon="ic:outline-search"></iconify-icon>
+                </button>
+            </div>
+        </div>
+
+        <div class="location-not-found">
+            <h1>Sorry, Location not found!!!</h1>
+            <img src="/images/404.png" alt="">
+        </div>
+        <div class="weather-body">
+            <img class="weather-img" src="/images/cloud.png" alt="Weather Image">
+            <div class="weather-box">
+                <p class="temperature">0<sup>°C</sup></p>
+                <p class="description">Cloud</p>
+            </div>
+            <div class="weather-details">
+
+
+                <div class="humidity">
+                    <iconify-icon icon="lets-icons:humidity-light"></iconify-icon>
+                    <div class="text">
+                        <span id="humidity">45%</span>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+
+
+                <div class="wind">
+                    <iconify-icon icon="ph:wind-fill"></iconify-icon>
+                    <div class="text">
+                        <span id="wind-speed">12Km/H</span>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
